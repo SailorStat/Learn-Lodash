@@ -1,10 +1,8 @@
-import React from 'react'
-import "./style.scss"
+import React from "react";
+import "./style.scss";
 
 const Description = () => {
-  return (
-    <div className="description">Description</div>
-  )
-}
+  return <div className="description">Description</div>;
+};
 
-export default Description
+export default Description;

@@ -1,17 +1,29 @@
-import React from 'react';
-import Code from '../Code';
-import Description from '../Description';
-import Title from '../Title';
-import "./style.scss"
+import "./style.scss";
+import React from "react";
 
-const Rule = () => {
+import Code from "../Code";
+import Description from "../Description";
+import Title from "../Title";
+
+function Rule() {
+  const a = 123;
+  const a2 = 234;
+
+  if (true) {
+    console.log();
+  }
+
+  if (true) {
+    console.log();
+  }
+
   return (
     <div className="rule">
       <Title />
       <Description />
-      <Code/>
+      <Code />
     </div>
-  )
+  );
 }
 
 export default Rule;

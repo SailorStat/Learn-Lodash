@@ -1,1 +1,1 @@
-export { default } from "./Rule"
+export { default } from "./Rule";

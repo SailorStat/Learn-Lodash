@@ -1,0 +1,67 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
+    "google",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "overrides": [
+    {
+      "files": ["*.tsx", "*.ts", "*.js", "*.jsx", ".css", ".scss"],
+      "rules": {
+        "simple-import-sort/imports": [
+          "warn",
+          {
+            "groups": [
+              ["^\\u0000", "^react$", "^prop-types$", "^@?\\w", "^redux$"],
+              ["^\\."],
+              ["^[^.]"]
+            ]
+          }
+        ],
+        "no-restricted-globals": 0,
+        "prettier/prettier": [
+          "error",
+          {
+            "printWidth": 120
+          }
+        ]
+      }
+    }
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint", "simple-import-sort", "prettier"],
+  "rules": {
+    "require-jsdoc": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/ban-types": "off",
+    "no-unused-vars": "warn",
+    "padding-line-between-statements": [
+      "warn",
+      { "blankLine": "never", "prev": "const", "next": "const" },
+      { "blankLine": "never", "prev": "let", "next": "const" },
+      { "blankLine": "never", "prev": "const", "next": "let" },
+      { "blankLine": "always", "prev": "class", "next": "*" },
+      { "blankLine": "always", "prev": "*", "next": "class" },
+      { "blankLine": "always", "prev": "*", "next": "return" },
+      { "blankLine": "always", "prev": "*", "next": "block-like" },
+      { "blankLine": "always", "prev": "*", "next": "block" },
+      { "blankLine": "always", "prev": "*", "next": "do" }
+    ]
+  }
+}

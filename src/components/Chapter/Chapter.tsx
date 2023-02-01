@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 import Rule from "../Rule";
-import "./style.scss"
+import "./style.scss";
 
 const Chapter = () => {
   return (
@@ -8,7 +8,7 @@ const Chapter = () => {
       <div className="chapter-title">Array</div>
       <Rule></Rule>
     </>
-  )
-}
+  );
+};
 
 export default Chapter;
