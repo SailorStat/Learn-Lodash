@@ -1,5 +1,13 @@
+.App-Container {
+  display: flex;
+  justify-content: center;
+}
+
 .App {
   text-align: center;
+  width: 90%;
+  border-radius: 29px;
+  background: cadetblue;
 }
 
 .App-logo {
