@@ -1,12 +1,12 @@
 import "./style.scss";
 import React from "react";
 
-interface Props {
+export interface DescriptionProps {
   children: string | JSX.Element;
   id: string;
 }
 
-const Description = ({ children, id }: Props) => {
+const Description: React.FC<DescriptionProps> = ({ children, id }) => {
   return (
     <div id={id} className="description">
       {children}

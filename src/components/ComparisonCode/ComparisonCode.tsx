@@ -1,13 +1,8 @@
 import "./style.scss";
 import React from "react";
 
-import Code, { CodeProps } from "../Code";
-
-export type ComparisonCodeProps_Codes = [CodeProps, CodeProps];
-
-export interface ComparisonCodeProps {
-  codesProps: ComparisonCodeProps_Codes;
-}
+import Code from "../Code";
+import { ComparisonCodeProps } from "./types";
 
 const ComparisonCode: React.FC<ComparisonCodeProps> = ({ codesProps }) => {
   return (
