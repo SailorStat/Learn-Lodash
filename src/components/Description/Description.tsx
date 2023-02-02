@@ -1,8 +1,17 @@
-import React from "react";
 import "./style.scss";
+import React from "react";
 
-const Description = () => {
-  return <div className="description">Description</div>;
+interface Props {
+  children: string | JSX.Element;
+  id: string;
+}
+
+const Description = ({ children, id }: Props) => {
+  return (
+    <div id={id} className="description">
+      {children}
+    </div>
+  );
 };
 
 export default Description;

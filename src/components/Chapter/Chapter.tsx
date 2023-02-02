@@ -1,6 +1,7 @@
-import React from "react";
-import Rule from "../Rule";
 import "./style.scss";
+import React from "react";
+
+import Rule from "../Rule";
 
 const Chapter = () => {
   return (

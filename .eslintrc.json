@@ -11,9 +11,16 @@
     "plugin:import/typescript",
     "google",
     "plugin:prettier/recommended",
+    "eslint:recommended",
     "prettier"
   ],
   "overrides": [
+    {
+        "files": ["*.ts", "*.tsx"],
+        "rules": {
+            "no-undef": "off"
+        }
+    },
     {
       "files": ["*.tsx", "*.ts", "*.js", "*.jsx", ".css", ".scss"],
       "rules": {
