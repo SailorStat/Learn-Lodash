@@ -61,9 +61,6 @@
     "no-unused-vars": "warn",
     "padding-line-between-statements": [
       "warn",
-      { "blankLine": "never", "prev": "const", "next": "const" },
-      { "blankLine": "never", "prev": "let", "next": "const" },
-      { "blankLine": "never", "prev": "const", "next": "let" },
       { "blankLine": "always", "prev": "class", "next": "*" },
       { "blankLine": "always", "prev": "*", "next": "class" },
       { "blankLine": "always", "prev": "*", "next": "return" },

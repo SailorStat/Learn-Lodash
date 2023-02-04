@@ -28,5 +28,6 @@ interface RuleBlockDescription extends RuleBlockTemplate<"description"> {
 export type RuleBlock = RuleBlockCode | RuleBlockTitle | RuleBlockComparisonCode | RuleBlockDescription;
 
 export interface RuleProps {
+  id: string;
   blocks: RuleBlock[];
 }
