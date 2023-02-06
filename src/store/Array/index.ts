@@ -12,6 +12,8 @@ import dropRight from "./dropRight";
 import dropRightWhile from "./dropRightWhile";
 import dropWhile from "./dropWhile";
 import fill from "./fill";
+import findIndex from "./findIndex";
+import findLastIndex from "./findLastIndex";
 
 const ArrayRules: RuleProps[] = [
   chunk,
@@ -25,6 +27,8 @@ const ArrayRules: RuleProps[] = [
   dropRightWhile,
   dropWhile,
   fill,
+  findIndex,
+  findLastIndex,
 ];
 
 const ArrayChapter: ChapterProps = {

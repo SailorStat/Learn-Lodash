@@ -76,10 +76,10 @@ console.log(droppedWhile); // [{ a: { c: 0 }, b: 5 }, { a: { c: 3 }, b: 2 }, { a
         id: "_.dropWhile3-code",
         language: "ts",
         children: `const baseArray = [
-{ a: { c: 3 }, b: 1 },
-{ a: { c: 0 }, b: 5 },
-{ a: { c: 3 }, b: 2 },
-{ a: { c: 3 }, b: 1 },
+  { a: { c: 3 }, b: 1 },
+  { a: { c: 0 }, b: 5 },
+  { a: { c: 3 }, b: 2 },
+  { a: { c: 3 }, b: 1 },
 ];
 
 const droppedWhile = _.dropWhile(baseArray, ["a", { c: 3 }]);
@@ -103,10 +103,10 @@ console.log(droppedWhile); // [{ a: { c: 0 }, b: 5 }, { a: { c: 3 }, b: 2 }, { a
         id: "_.dropWhile4-code",
         language: "ts",
         children: `const baseArray = [
-{ a: 3, b: 1 },
-{ a: 0, b: 5 },
-{ a: 3, b: 2 },
-{ a: 3, b: 1 },
+  { a: 3, b: 1 },
+  { a: 0, b: 5 },
+  { a: 3, b: 2 },
+  { a: 3, b: 1 },
 ];
 
 const droppedWhile = _.dropWhile(baseArray, "a");
