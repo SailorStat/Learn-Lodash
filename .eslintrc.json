@@ -69,4 +69,22 @@
       { "blankLine": "always", "prev": "*", "next": "do" }
     ]
   }
+  // "settings": {
+  //   "import/parsers": {
+  //     "@typescript-eslint/parser": [".ts", ".tsx"]
+  //   },
+  //   "import/resolver": {
+  //     "typescript": {
+  //       "alwaysTryTypes": true,
+  //       "project": "package.json"
+  //     },
+  //     // "node": {
+  //     //   "paths": ["src"],
+  //     //   "moduleDirectory": ["node_modules", "src"],
+  //     //   "alias": {
+  //     //     "@src": "./src"
+  //     //   }
+  //     // }
+  //   }
+  // }
 }

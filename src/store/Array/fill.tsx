@@ -1,5 +1,4 @@
 import React from "react";
-// eslint-disable-next-line import/no-unresolved
 import Warning from "@src/components/common/Warning";
 
 import { RuleProps } from "../../components/Rule";
