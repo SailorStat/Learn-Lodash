@@ -1,7 +1,6 @@
 import React from "react";
+import { RuleProps } from "@src/components/Rule";
 import _ from "lodash";
-
-import { RuleProps } from "../../components/Rule";
 
 const def: RuleProps = {
   id: "_.def",

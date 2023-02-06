@@ -1,7 +1,6 @@
 import React from "react";
 import Warning from "@src/components/common/Warning";
-
-import { RuleProps } from "../../components/Rule";
+import { RuleProps } from "@src/components/Rule";
 
 const fill: RuleProps = {
   id: "_.fill",

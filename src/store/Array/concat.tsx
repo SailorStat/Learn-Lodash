@@ -1,6 +1,5 @@
 import React from "react";
-
-import { RuleProps } from "../../components/Rule";
+import { RuleProps } from "@src/components/Rule";
 
 const concat: RuleProps = {
   id: "_.concat",

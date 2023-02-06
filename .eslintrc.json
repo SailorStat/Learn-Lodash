@@ -9,17 +9,22 @@
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:import/typescript",
-    "google",
     "plugin:prettier/recommended",
     "eslint:recommended",
     "prettier"
   ],
   "overrides": [
     {
-        "files": ["*.ts", "*.tsx"],
-        "rules": {
-            "no-undef": "off"
-        }
+      "files": ["*.js", "*.ts", "*.tsx"],
+      "rules": {
+        "no-undef": "off"
+      }
+    },
+    {
+      "files": ["*.js", "*.ts", "*.tsx"],
+      "rules": {
+        "import/no-named-as-default-member": "off"
+      }
     },
     {
       "files": ["*.tsx", "*.ts", "*.js", "*.jsx", ".css", ".scss"],
@@ -52,7 +57,17 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint", "simple-import-sort", "prettier"],
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true
+      }
+    }
+  },
+  "plugins": ["react", "@typescript-eslint", "simple-import-sort", "prettier", "import"],
   "rules": {
     "react/prop-types": "off",
     "require-jsdoc": "off",
@@ -69,22 +84,4 @@
       { "blankLine": "always", "prev": "*", "next": "do" }
     ]
   }
-  // "settings": {
-  //   "import/parsers": {
-  //     "@typescript-eslint/parser": [".ts", ".tsx"]
-  //   },
-  //   "import/resolver": {
-  //     "typescript": {
-  //       "alwaysTryTypes": true,
-  //       "project": "package.json"
-  //     },
-  //     // "node": {
-  //     //   "paths": ["src"],
-  //     //   "moduleDirectory": ["node_modules", "src"],
-  //     //   "alias": {
-  //     //     "@src": "./src"
-  //     //   }
-  //     // }
-  //   }
-  // }
 }

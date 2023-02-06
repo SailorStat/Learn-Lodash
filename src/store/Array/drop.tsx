@@ -1,6 +1,5 @@
 import React from "react";
-
-import { RuleProps } from "../../components/Rule";
+import { RuleProps } from "@src/components/Rule";
 
 const drop: RuleProps = {
   id: "_.drop",

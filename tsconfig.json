@@ -13,12 +13,13 @@
     "moduleResolution": "node",
     "baseUrl": "./",
     "paths": {
-      "@src/*": ["src/*"]
+      "@src/*": ["./src/*"]
     },
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react"
   },
-  "include": ["src/*"]
+  "include": ["src/*", "craco.config.js"],
+  "exclude": ["node_modules"]
 }

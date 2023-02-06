@@ -1,5 +1,6 @@
-import { ChapterProps } from "../../components/Chapter";
-import { RuleProps } from "../../components/Rule";
+import { ChapterProps } from "@src/components/Chapter";
+import { RuleProps } from "@src/components/Rule";
+
 import chunk from "./chunk";
 import compact from "./compact";
 import concat from "./concat";
