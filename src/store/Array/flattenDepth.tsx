@@ -1,6 +1,5 @@
 import React from "react";
 import { RuleProps } from "@src/components/Rule";
-import _ from "lodash";
 
 const flattenDepth: RuleProps = {
   id: "_.flattenDepth",
@@ -39,10 +38,3 @@ console.log(flattedDepth2); // [{ a: 1 }, { a: 5 }, [{ a: 2 }, [{ a: 1 }]]];`,
 };
 
 export default flattenDepth;
-const baseArray = [{ a: 1 }, [{ a: 5 }, [{ a: 2 }, [{ a: 1 }]]]];
-
-const flattedDepth = _.flattenDepth(baseArray, 2);
-console.log(flattedDepth); // [{ a: 1 }, { a: 5 }, { a: 2 }, [{ a: 1 }]];
-
-const flattedDepth2 = _.flattenDepth(baseArray);
-console.log(flattedDepth2); // [{ a: 1 }, { a: 5 }, [{ a: 2 }, [{ a: 1 }]]];

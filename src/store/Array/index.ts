@@ -18,6 +18,10 @@ import flatten from "./flatten";
 import flattenDeep from "./flattenDeep";
 import flattenDepth from "./flattenDepth";
 import fromPairsToPairs from "./fromPairsToPairs";
+import head from "./head";
+import indexOf from "./indexOf";
+import initial from "./initial";
+import intersection from "./intersection";
 
 const ArrayRules: RuleProps[] = [
   chunk,
@@ -37,6 +41,10 @@ const ArrayRules: RuleProps[] = [
   flattenDeep,
   flattenDepth,
   fromPairsToPairs,
+  head,
+  indexOf,
+  initial,
+  intersection,
 ];
 
 const ArrayChapter: ChapterProps = {
