@@ -50,8 +50,8 @@ const baseArray = [
   { a: 3, b: 1 },
   { a: 0, b: 5 },
   { a: 3, b: 2 },
-  { a: 3, b: 1 },
+  { a: 4, b: 1 },
 ];
 
-const droppedWhile = _.dropWhile(baseArray, "a");
+const droppedWhile = _.def(baseArray, "a");
 console.log(droppedWhile); // [{ a: 0, b: 5 }, { a: 3, b: 2 }, { a: 3, b: 1 }];
