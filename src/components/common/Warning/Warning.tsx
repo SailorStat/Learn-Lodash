@@ -1,14 +1,13 @@
 import React from "react";
 
-interface Props extends React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
-  message: string;
-}
-
-const Warning: React.FC<Props> = ({ message, ...props }) => {
+const Warning: React.FC<React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>> = ({
+  children,
+  ...props
+}) => {
   return (
     <div style={{ color: "red" }} {...props}>
       <i>
-        <b>!!! {message}</b>
+        <b>!!! {children}</b>
       </i>
     </div>
   );

@@ -42,7 +42,7 @@ const pullRemove: RuleProps = {
         id: "_.pull-description, _.remove-description",
         children: (
           <>
-            <Warning message="Мутирующие функции. Удаляют значения из исходного массива" />
+            <Warning>Мутирующие функции. Удаляют значения из исходного массива</Warning>
             <div>
               <i>
                 Для получения массива без указанных значений рекомендуется использовать{" "}

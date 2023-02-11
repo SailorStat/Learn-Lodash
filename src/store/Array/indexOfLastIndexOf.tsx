@@ -2,7 +2,7 @@ import React from "react";
 import Link from "@src/components/common/Link";
 import { RuleProps } from "@src/components/Rule";
 
-const indexOfIndexLastOf: RuleProps = {
+const indexOfLastIndexOf: RuleProps = {
   id: "_.indexOf, _.lastIndexOf",
   blocks: [
     {
@@ -21,7 +21,9 @@ const indexOfIndexLastOf: RuleProps = {
             <div>
               Принимает <b>массив и искомое значение</b>, возвращает <b>индекс</b> первого совпавшего значения
             </div>
-            <div>Можно указать индекс начала поиска. При отрицательном индексе поиск начинается с конца</div>
+            <div id="_.lastIndexOf-description">
+              Можно указать индекс начала поиска. При отрицательном индексе поиск начинается с конца
+            </div>
             <div>
               Также для поиска с конца можно использовать <Link>_.lastIndexOf</Link>
             </div>
@@ -56,4 +58,4 @@ console.log(index); // 1;`,
   ],
 };
 
-export default indexOfIndexLastOf;
+export default indexOfLastIndexOf;

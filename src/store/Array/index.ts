@@ -19,7 +19,7 @@ import flattenDeep from "./flattenDeep";
 import flattenDepth from "./flattenDepth";
 import fromPairsToPairs from "./fromPairsToPairs";
 import head from "./head";
-import indexOfIndexLastOf from "./indexOfIndexLastOf";
+import indexOfLastIndexOf from "./indexOfLastIndexOf";
 import initial from "./initial";
 import intersection from "./intersection";
 import intersectionBy from "./intersectionBy";
@@ -27,7 +27,19 @@ import intersectionWith from "./intersectionWith";
 import join from "./join";
 import last from "./last";
 import nth from "./nth";
+import pullAll from "./pullAll";
+import pullAllBy from "./pullAllBy";
+import pullAllWith from "./pullAllWith";
+import pullAt from "./pullAt";
 import pullRemove from "./pullRemove";
+import reverse from "./reverse";
+import slice from "./slice";
+import sortedIndex from "./sortedIndex";
+import sortedIndexBy from "./sortedIndexBy";
+import sortedIndexOf from "./sortedIndexOf";
+import sortedLastIndex from "./sortedLastIndex";
+import sortedLastIndexBy from "./sortedLastIndexBy";
+import sortedLastIndexOf from "./sortedLastIndexOf";
 
 const ArrayRules: RuleProps[] = [
   chunk,
@@ -48,7 +60,7 @@ const ArrayRules: RuleProps[] = [
   flattenDepth,
   fromPairsToPairs,
   head,
-  indexOfIndexLastOf,
+  indexOfLastIndexOf,
   initial,
   intersection,
   intersectionBy,
@@ -57,6 +69,18 @@ const ArrayRules: RuleProps[] = [
   last,
   nth,
   pullRemove,
+  pullAll,
+  pullAllBy,
+  pullAllWith,
+  pullAt,
+  reverse,
+  slice,
+  sortedIndex,
+  sortedIndexBy,
+  sortedIndexOf,
+  sortedLastIndex,
+  sortedLastIndexBy,
+  sortedLastIndexOf,
 ];
 
 const ArrayChapter: ChapterProps = {
