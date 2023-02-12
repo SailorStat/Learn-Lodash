@@ -40,6 +40,11 @@ import sortedIndexOf from "./sortedIndexOf";
 import sortedLastIndex from "./sortedLastIndex";
 import sortedLastIndexBy from "./sortedLastIndexBy";
 import sortedLastIndexOf from "./sortedLastIndexOf";
+import sortedUniq from "./sortedUniq";
+import sortedUniqBy from "./sortedUniqBy";
+import tail from "./tail";
+import take from "./take";
+import takeRight from "./takeRight";
 
 const ArrayRules: RuleProps[] = [
   chunk,
@@ -81,6 +86,11 @@ const ArrayRules: RuleProps[] = [
   sortedLastIndex,
   sortedLastIndexBy,
   sortedLastIndexOf,
+  sortedUniq,
+  sortedUniqBy,
+  tail,
+  take,
+  takeRight,
 ];
 
 const ArrayChapter: ChapterProps = {
