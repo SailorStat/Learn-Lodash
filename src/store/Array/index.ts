@@ -45,6 +45,12 @@ import sortedUniqBy from "./sortedUniqBy";
 import tail from "./tail";
 import take from "./take";
 import takeRight from "./takeRight";
+import takeRightWhile from "./takeRightWhile";
+import takeWhile from "./takeWhile";
+import union from "./union";
+import unionBy from "./unionBy";
+import unionWith from "./unionWith";
+import uniq from "./uniq";
 
 const ArrayRules: RuleProps[] = [
   chunk,
@@ -91,6 +97,12 @@ const ArrayRules: RuleProps[] = [
   tail,
   take,
   takeRight,
+  takeRightWhile,
+  takeWhile,
+  union,
+  unionBy,
+  unionWith,
+  uniq,
 ];
 
 const ArrayChapter: ChapterProps = {
