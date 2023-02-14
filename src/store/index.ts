@@ -1,14 +1,36 @@
+import { configureStore, createSlice } from "@reduxjs/toolkit";
+
 import { ChapterProps } from "../components/Chapter";
 import ArrayChapter from "./Array";
 
 interface LearnStore {
   id: string;
   chapters: ChapterProps[];
+  currentChapter: number;
 }
 
-export const learnStore: LearnStore = {
-  id: "Lodash",
-  chapters: [ArrayChapter],
-};
+const learnStore = createSlice({
+  name: "learnBase",
+  initialState: {
+    id: "Lodash",
+    chapters: [ArrayChapter],
+    currentChapter: 0,
+  } as LearnStore,
+  reducers: {
+    changeCurrentChapter: (state, action) => {
+      console.log(action);
+    },
+  },
+});
 
-export default learnStore;
+const store = configureStore({
+  reducer: {
+    learnStore: learnStore.reducer,
+  },
+});
+
+export default store;
+
+export type RootState = ReturnType<typeof store.getState>;
+
+export type AppDispatch = typeof store.dispatch;

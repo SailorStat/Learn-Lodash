@@ -1,21 +1,21 @@
 import React from "react";
 import { RuleProps } from "@src/components/Rule";
 
-const unionWith: RuleProps = {
-  id: "_.unionWith",
+const xorWith: RuleProps = {
+  id: "_.xorWith",
   blocks: [
     {
       type: "title",
-      title: { id: "_.unionWith-title", children: "_.unionWith" },
+      title: { id: "_.xorWith-title", children: "_.xorWith" },
     },
     {
       type: "description",
       description: {
-        id: "_.unionWith-description",
+        id: "_.xorWith-description",
         children: (
           <>
             Принимает <b>массивы и функцию сравнения</b>, возвращает <b>массив</b> уникальных значений, для которых
-            сравнение с предыдущими элементами вернуло <b>false</b>
+            сравнение с элементами других массивов вернуло <b>false</b>
           </>
         ),
       },
@@ -23,16 +23,16 @@ const unionWith: RuleProps = {
     {
       type: "code",
       code: {
-        id: "_.unionWith-code",
+        id: "_.xorWith-code",
         language: "ts",
         children: `const baseArray = [{ a: 1 }, { a: 5 }, { a: 2 }, { a: 1 }];
 const baseArray2 = [{ a: 1 }, { a: 3 }, { a: 7 }, { a: 8 }];
 
-const unitedWith = _.unionWith(baseArray, baseArray2, (a, b) => a.a % 3 === b.a % 3);
-console.log(unitedWith); // [{ a: 1 }, { a: 5 }, { a: 3 }];`,
+const xoredWith = _.xorWith(baseArray, baseArray2, (a, b) => a.a % 4 === b.a % 4);
+console.log(xoredWith); // [{ a: 2 }, { a: 3 }, { a: 8 }];`,
       },
     },
   ],
 };
 
-export default unionWith;
+export default xorWith;

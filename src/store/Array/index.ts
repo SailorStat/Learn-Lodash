@@ -51,6 +51,16 @@ import union from "./union";
 import unionBy from "./unionBy";
 import unionWith from "./unionWith";
 import uniq from "./uniq";
+import uniqBy from "./uniqBy";
+import uniqWith from "./uniqWith";
+import without from "./without";
+import xor from "./xor";
+import xorBy from "./xorBy";
+import xorWith from "./xorWith";
+import zipObject from "./zipObject";
+import zipObjectDeep from "./zipObjectDeep";
+import zipUnzip from "./zipUnzip";
+import zipWithUnzipWith from "./zipWithUnzipWith";
 
 const ArrayRules: RuleProps[] = [
   chunk,
@@ -103,6 +113,16 @@ const ArrayRules: RuleProps[] = [
   unionBy,
   unionWith,
   uniq,
+  uniqBy,
+  uniqWith,
+  without,
+  xor,
+  xorBy,
+  xorWith,
+  zipUnzip,
+  zipObject,
+  zipObjectDeep,
+  zipWithUnzipWith,
 ];
 
 const ArrayChapter: ChapterProps = {
