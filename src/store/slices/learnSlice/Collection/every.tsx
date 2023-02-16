@@ -1,6 +1,5 @@
 import React from "react";
 import { RuleProps } from "@src/components/Rule";
-import _ from "lodash";
 
 const every: RuleProps = {
   id: "_.every",
@@ -92,11 +91,3 @@ console.log(isEvery); // true;`,
 };
 
 export default every;
-
-const baseArray = [
-  { a: 2, b: "lala" },
-  { a: 2, b: "nana" },
-];
-
-const isEvery = _.every(baseArray, "a");
-console.log(isEvery); // true;
