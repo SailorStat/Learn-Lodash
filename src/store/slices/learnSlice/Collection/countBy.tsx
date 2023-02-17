@@ -28,7 +28,7 @@ const countBy: RuleProps = {
         language: "ts",
         children: `// Округление в близжайшую сторону
 const countedBy = _.countBy([1.3, 1.2, 4.5, 4.6], Math.round);
-console.log(countedBy); // { 1: 2, 5: 2 }
+console.log(countedBy); // { 1: 2, 5: 2 };
 
 const countedBy2 = _.countBy(["la", "lala", "lala"], "length");
 console.log(countedBy2); // { 2: 1, 4: 2 };`,

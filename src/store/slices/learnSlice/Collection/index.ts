@@ -9,8 +9,31 @@ import findLast from "./findLast";
 import flatMap from "./flatMap";
 import flatMapDeep from "./flatMapDeep";
 import flatMapDepth from "./flatMapDepth";
+import forEach from "./forEach";
+import forEachRight from "./forEachRight";
+import groupBy from "./groupBy";
+import includes from "./includes";
+import invokeMap from "./invokeMap";
+import keyBy from "./keyBy";
+import map from "./map";
 
-const CollectionRules: RuleProps[] = [countBy, every, filter, find, findLast, flatMap, flatMapDeep, flatMapDepth];
+const CollectionRules: RuleProps[] = [
+  countBy,
+  every,
+  filter,
+  find,
+  findLast,
+  flatMap,
+  flatMapDeep,
+  flatMapDepth,
+  forEach,
+  forEachRight,
+  groupBy,
+  includes,
+  invokeMap,
+  keyBy,
+  map,
+];
 
 const CollectionChapter: ChapterProps = {
   id: "chapter-collection",
