@@ -16,6 +16,17 @@ import includes from "./includes";
 import invokeMap from "./invokeMap";
 import keyBy from "./keyBy";
 import map from "./map";
+import orderBy from "./orderBy";
+import partition from "./partition";
+import reduce from "./reduce";
+import reduceRight from "./reduceRight";
+import reject from "./reject";
+import sample from "./sample";
+import sampleSize from "./sampleSize";
+import shuffle from "./shuffle";
+import size from "./size";
+import some from "./some";
+import sortBy from "./sortBy";
 
 const CollectionRules: RuleProps[] = [
   countBy,
@@ -33,6 +44,17 @@ const CollectionRules: RuleProps[] = [
   invokeMap,
   keyBy,
   map,
+  orderBy,
+  partition,
+  reduce,
+  reduceRight,
+  reject,
+  sample,
+  sampleSize,
+  shuffle,
+  size,
+  some,
+  sortBy,
 ];
 
 const CollectionChapter: ChapterProps = {

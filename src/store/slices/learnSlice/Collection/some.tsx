@@ -1,24 +1,21 @@
 import React from "react";
 import { RuleProps } from "@src/components/Rule";
 
-const findLast: RuleProps = {
-  id: "_.findLast",
+const some: RuleProps = {
+  id: "_.some",
   blocks: [
     {
       type: "title",
-      title: { id: "_.findLast-title", children: "_.findLast" },
+      title: { id: "_.some-title", children: "_.some" },
     },
     {
       type: "description",
       description: {
-        id: "_.findLast-description",
+        id: "_.some-description",
         children: (
           <>
-            Принимает <b>массив и функцию преобразования</b>, возвращает первый с конца <b>элемент массива</b>, который
-            после преобразования вернул <b>== true</b>
-            <div>
-              <i>Если индекс не передан, поиск ведётся с последнего элемента</i>
-            </div>
+            Принимает <b>массив и функцию преобразования</b>, возвращает <b>true</b>, если есть элемент, который после
+            преобразования вернул <b>== true</b>
           </>
         ),
       },
@@ -26,7 +23,7 @@ const findLast: RuleProps = {
     {
       type: "code",
       code: {
-        id: "_.findLast-code",
+        id: "_.some-code",
         language: "ts",
         children: `const baseArray = [
   { a: 0, b: "lala" },
@@ -35,21 +32,21 @@ const findLast: RuleProps = {
   { a: 3, b: "lala" },
 ];
 
-const findedLast = _.findLast(baseArray, (value) => value.b === "lala", 1);
-console.log(findedLast); // [{ a: 0, b: "lala" }];`,
+const has = _.some(baseArray, (value) => value.b === "lala", 1);
+console.log(has); // true;`,
       },
     },
     {
       type: "description",
       description: {
-        id: "_.findLast2-description",
+        id: "_.some2-description",
         children: <>При поиске по объекту проверяются вложенные свойства на соответствие переданному объекту</>,
       },
     },
     {
       type: "code",
       code: {
-        id: "_.findLast2-code",
+        id: "_.some2-code",
         language: "ts",
         children: `const baseArray = [
   { a: 0, b: "lala" },
@@ -58,21 +55,21 @@ console.log(findedLast); // [{ a: 0, b: "lala" }];`,
   { a: 3, b: "lala" },
 ];
 
-const findedLast = _.findLast(baseArray, { b: "nana" });
-console.log(findedLast); // [{ a: 2, b: "nana" }];`,
+const has = _.some(baseArray, { b: "dodo" });
+console.log(has); // false;`,
       },
     },
     {
       type: "description",
       description: {
-        id: "_.findLast3-description",
+        id: "_.some3-description",
         children: <>При поиске по массиву первое значение воспринимается, как ключ, второе - значение</>,
       },
     },
     {
       type: "code",
       code: {
-        id: "_.findLast3-code",
+        id: "_.some3-code",
         language: "ts",
         children: `const baseArray = [
   { a: 0, b: "lala" },
@@ -81,17 +78,18 @@ console.log(findedLast); // [{ a: 2, b: "nana" }];`,
   { a: 3, b: "lala" },
 ];
 
-const findedLast = _.findLast(baseArray, ["b", "nana"]);
-console.log(findedLast); // [{ a: 1, b: "nana" }];`,
+const has = _.some(baseArray, ["b", "dodo"]);
+console.log(has); // false;`,
       },
     },
     {
       type: "description",
       description: {
-        id: "_.findLast4-description",
+        id: "_.some4-description",
         children: (
           <>
-            При поиске по ключу возвращает элемент, который по ключу имеет значение <b>== true</b>
+            При поиске по ключу возвращает <b>true</b>, если есть элемент, который по ключу имеет значение{" "}
+            <b>== true</b>
           </>
         ),
       },
@@ -99,7 +97,7 @@ console.log(findedLast); // [{ a: 1, b: "nana" }];`,
     {
       type: "code",
       code: {
-        id: "_.findLast4-code",
+        id: "_.some4-code",
         language: "ts",
         children: `const baseArray = [
   { a: 0, b: "lala" },
@@ -108,11 +106,11 @@ console.log(findedLast); // [{ a: 1, b: "nana" }];`,
   { a: 3, b: "lala" },
 ];
 
-const findedLast = _.findLast(baseArray, "a");
-console.log(findedLast); // [{ a: 3, b: "lala" }];`,
+const has = _.some(baseArray, "a");
+console.log(has); // true;`,
       },
     },
   ],
 };
 
-export default findLast;
+export default some;
