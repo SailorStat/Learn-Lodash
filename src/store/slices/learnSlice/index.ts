@@ -3,6 +3,8 @@ import { ChapterProps } from "@src/components/Chapter";
 
 import ArrayChapter from "./Array";
 import CollectionChapter from "./Collection";
+import Date from "./Date";
+import Function from "./Function";
 
 interface LearnStore {
   id: string;
@@ -14,7 +16,9 @@ const initialState = {
   id: "Lodash",
   chapters: [
     // ArrayChapter,
-    CollectionChapter,
+    // CollectionChapter,
+    // Date,
+    Function,
   ],
   currentChapter: 0,
 } as LearnStore;
