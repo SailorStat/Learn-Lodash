@@ -10,8 +10,32 @@ import curry from "./curry";
 import curryRight from "./curryRight";
 import debounce from "./debounce";
 import defer from "./defer";
+import delay from "./delay";
+import flip from "./flip";
+import memoize from "./memoize";
+import negate from "./negate";
+import once from "./once";
+import overArgs from "./overArgs";
+import partial from "./partial";
 
-const FunctionRules: RuleProps[] = [after, ary, before, bind, bindKey, curry, curryRight, debounce, defer];
+const FunctionRules: RuleProps[] = [
+  after,
+  ary,
+  before,
+  bind,
+  bindKey,
+  curry,
+  curryRight,
+  debounce,
+  defer,
+  delay,
+  flip,
+  memoize,
+  negate,
+  once,
+  overArgs,
+  partial,
+];
 
 const FunctionChapter: ChapterProps = {
   id: "chapter-function",
