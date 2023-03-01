@@ -17,6 +17,13 @@ import negate from "./negate";
 import once from "./once";
 import overArgs from "./overArgs";
 import partial from "./partial";
+import partialRight from "./partialRight";
+import rearg from "./rearg";
+import rest from "./rest";
+import spread from "./spread";
+import throttle from "./throttle";
+import unary from "./unary";
+import wrap from "./wrap";
 
 const FunctionRules: RuleProps[] = [
   after,
@@ -35,6 +42,13 @@ const FunctionRules: RuleProps[] = [
   once,
   overArgs,
   partial,
+  partialRight,
+  rearg,
+  rest,
+  spread,
+  throttle,
+  unary,
+  wrap,
 ];
 
 const FunctionChapter: ChapterProps = {
