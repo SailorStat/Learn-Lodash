@@ -5,6 +5,7 @@ import ArrayChapter from "./Array";
 import CollectionChapter from "./Collection";
 import Date from "./Date";
 import Function from "./Function";
+import LangChapter from "./Lang";
 
 interface LearnStore {
   id: string;
@@ -18,7 +19,8 @@ const initialState = {
     // ArrayChapter,
     // CollectionChapter,
     // Date,
-    Function,
+    // Function,
+    LangChapter,
   ],
   currentChapter: 0,
 } as LearnStore;
