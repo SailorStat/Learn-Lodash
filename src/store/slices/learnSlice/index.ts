@@ -3,9 +3,12 @@ import { ChapterProps } from "@src/components/Chapter";
 
 import ArrayChapter from "./Array";
 import CollectionChapter from "./Collection";
-import Date from "./Date";
-import Function from "./Function";
+import DateChapter from "./Date";
+import FunctionChapter from "./Function";
 import LangChapter from "./Lang";
+import MathChapter from "./Math";
+import NumberChapter from "./Number";
+import ObjectChapter from "./Object";
 
 interface LearnStore {
   id: string;
@@ -18,9 +21,12 @@ const initialState = {
   chapters: [
     // ArrayChapter,
     // CollectionChapter,
-    // Date,
-    // Function,
-    LangChapter,
+    // DateChapter,
+    // FunctionChapter,
+    // LangChapter,
+    // MathChapter,
+    // NumberChapter,
+    ObjectChapter,
   ],
   currentChapter: 0,
 } as LearnStore;
