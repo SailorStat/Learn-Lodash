@@ -11,6 +11,7 @@ import NumberChapter from "./Number";
 import ObjectChapter from "./Object";
 import SeqChapter from "./Seq";
 import StringChapter from "./String";
+import UtilChapter from "./Util";
 
 interface LearnStore {
   id: string;
@@ -30,7 +31,8 @@ const initialState = {
     // NumberChapter,
     // ObjectChapter,
     // SeqChapter,
-    StringChapter,
+    // StringChapter,
+    UtilChapter,
   ],
   currentChapter: 0,
 } as LearnStore;

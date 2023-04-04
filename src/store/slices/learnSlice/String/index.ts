@@ -21,6 +21,16 @@ import split from "./split";
 import startCase from "./startCase";
 import startsWith from "./startsWith";
 import template from "./template";
+import toLower from "./toLower";
+import toUpper from "./toUpper";
+import trim from "./trim";
+import trimEnd from "./trimEnd";
+import trimStart from "./trimStart";
+import truncate from "./truncate";
+import unescape from "./unescape";
+import upperCase from "./upperCase";
+import upperFirst from "./upperFirst";
+import words from "./words";
 
 const StringRules: RuleProps[] = [
   camelCase,
@@ -43,6 +53,16 @@ const StringRules: RuleProps[] = [
   startCase,
   startsWith,
   template,
+  toLower,
+  toUpper,
+  trim,
+  trimEnd,
+  trimStart,
+  truncate,
+  unescape,
+  upperCase,
+  upperFirst,
+  words,
 ];
 
 const StringChapter: ChapterProps = {
