@@ -1,26 +1,23 @@
 import "./style.scss";
 import React from "react";
-import useAppDispatch from "@src/hooks/useAppDispatch";
 import useAppSelector from "@src/hooks/useAppSelector";
-import { learnSlice } from "@src/store/slices";
+import { Link, useParams } from "react-router-dom";
 
 const Header = () => {
-  const { chapters, currentChapter } = useAppSelector((store) => store.learnReducer);
-  const { changeCurrentChapter } = learnSlice.actions;
-  const dispatch = useAppDispatch();
-
-  const changePage = (index: number) => dispatch(changeCurrentChapter(index));
+  const { block } = useParams<{ block: string }>();
+  const { chapters } = useAppSelector((store) => store.learnReducer);
 
   return (
     <div className="header">
-      {chapters.map(({ id, title }, index) => (
-        <div
-          key={`${id}-Header`}
-          style={{ border: index === currentChapter ? "1px solid #463931" : "none" }}
-          onClick={() => changePage(index)}
-        >
-          {title}
-        </div>
+      {chapters.map(({ id, title }) => (
+        <Link key={`${id}-Header`} to={`/${title.toLowerCase()}`}>
+          <div
+            className="header__item"
+            style={{ border: title.toLowerCase() === block ? "1px solid #463931" : "none" }}
+          >
+            {title}
+          </div>
+        </Link>
       ))}
     </div>
   );

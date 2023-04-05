@@ -1,24 +1,13 @@
 import "./App.css";
 import React from "react";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import Chapter from "./components/Chapter";
-import Header from "./components/Header/Header";
-import Technology from "./components/Technology";
-import useAppSelector from "./hooks/useAppSelector";
+import Content from "./components/Content";
 
 function App() {
-  const { chapters, currentChapter, id } = useAppSelector((store) => store.learnReducer);
-  const chapter = React.useMemo(() => chapters[currentChapter], [currentChapter]);
+  const router = createBrowserRouter([{ path: "/:block?", element: <Content /> }]);
 
-  return (
-    <div className="App-Container">
-      <Header />
-      <div className="App">
-        <Technology id={id}>{id}</Technology>
-        <Chapter {...chapter} />
-      </div>
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

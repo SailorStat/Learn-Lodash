@@ -1,4 +1,7 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import {
+  createSlice,
+  // PayloadAction
+} from "@reduxjs/toolkit";
 import { ChapterProps } from "@src/components/Chapter";
 
 import ArrayChapter from "./Array";
@@ -16,34 +19,34 @@ import UtilChapter from "./Util";
 interface LearnStore {
   id: string;
   chapters: ChapterProps[];
-  currentChapter: number;
+  currentChapter: string;
 }
 
 const initialState = {
   id: "Lodash",
   chapters: [
-    // ArrayChapter,
-    // CollectionChapter,
-    // DateChapter,
-    // FunctionChapter,
-    // LangChapter,
-    // MathChapter,
-    // NumberChapter,
-    // ObjectChapter,
-    // SeqChapter,
-    // StringChapter,
+    ArrayChapter,
+    CollectionChapter,
+    DateChapter,
+    FunctionChapter,
+    LangChapter,
+    MathChapter,
+    NumberChapter,
+    ObjectChapter,
+    SeqChapter,
+    StringChapter,
     UtilChapter,
   ],
-  currentChapter: 0,
+  // currentChapter: "",
 } as LearnStore;
 
 const learnSlice = createSlice({
   name: "learnBase",
   initialState,
   reducers: {
-    changeCurrentChapter: (state, { payload }: PayloadAction<number>) => {
-      state.currentChapter = payload;
-    },
+    // changeCurrentChapter: (state, { payload }: PayloadAction<string>) => {
+    //   state.currentChapter = payload;
+    // },
   },
 });
 

@@ -9,12 +9,10 @@ export interface ChapterProps {
   title: string;
 }
 
-const Chapter: React.FC<ChapterProps> = ({ rules, id, title }) => {
-  // const comparisonCodeId = "_.chunk-comparisonCode";
-  // const comparisonCodeCodesProps: ComparisonCodes = [
-  //   { language: "ts", id: "_.chunk-code-0", children: "const a = 42;" },
-  //   { language: "ts", id: "_.chunk-code-0", children: "const b = 42;" },
-  // ];
+const Chapter: React.FC<Partial<ChapterProps>> = ({ rules, id, title }) => {
+  if (!rules || !id || !title) {
+    return null;
+  }
 
   return (
     <>

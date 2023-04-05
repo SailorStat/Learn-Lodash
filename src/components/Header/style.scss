@@ -14,13 +14,19 @@
   border-radius: 0 0 10px 10px;
   z-index: 10;
   
-  div {
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
+  a {
+    text-decoration: none;
 
-    &:hover {
-      background-color: rgb(176, 89, 26);
+    & > div.header__item {
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      color: cornsilk;
+  
+      &:hover {
+        background-color: rgb(176, 89, 26);
+      }
     }
   }
+
 }
