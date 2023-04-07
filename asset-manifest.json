@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Learn-Lodash/static/css/main.d466bc2b.css",
+    "main.js": "/Learn-Lodash/static/js/main.216b09b9.js",
+    "index.html": "/Learn-Lodash/index.html",
+    "main.d466bc2b.css.map": "/Learn-Lodash/static/css/main.d466bc2b.css.map",
+    "main.216b09b9.js.map": "/Learn-Lodash/static/js/main.216b09b9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d466bc2b.css",
+    "static/js/main.216b09b9.js"
+  ]
+}
