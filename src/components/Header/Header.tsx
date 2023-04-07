@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <div className="header">
       {chapters.map(({ id, title }) => (
-        <Link key={`${id}-Header`} to={`/${title.toLowerCase()}`}>
+        <Link key={`${id}-Header`} to={`/Learn-Lodash/${title.toLowerCase()}`}>
           <div
             className="header__item"
             style={{ border: title.toLowerCase() === block ? "1px solid #463931" : "none" }}
