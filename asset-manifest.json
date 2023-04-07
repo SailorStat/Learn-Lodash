@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Learn-Lodash/static/css/main.d466bc2b.css",
-    "main.js": "/Learn-Lodash/static/js/main.18b798f0.js",
+    "main.js": "/Learn-Lodash/static/js/main.370d01ec.js",
     "index.html": "/Learn-Lodash/index.html",
     "main.d466bc2b.css.map": "/Learn-Lodash/static/css/main.d466bc2b.css.map",
-    "main.18b798f0.js.map": "/Learn-Lodash/static/js/main.18b798f0.js.map"
+    "main.370d01ec.js.map": "/Learn-Lodash/static/js/main.370d01ec.js.map"
   },
   "entrypoints": [
     "static/css/main.d466bc2b.css",
-    "static/js/main.18b798f0.js"
+    "static/js/main.370d01ec.js"
   ]
 }
